@@ -83,7 +83,7 @@
 </code></pre>
 				<h3 id="basic-use-in-typescript">Basic Use in Typescript</h3>
 				<p>2 vs 2 example:</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { rate, Rating, quality } from <span class="hljs-string">'ts-trueskill'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { rate, Rating, quality } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-trueskill'</span>;
 <span class="hljs-keyword">const</span> team1 = [<span class="hljs-keyword">new</span> Rating(), <span class="hljs-keyword">new</span> Rating()];
 <span class="hljs-keyword">const</span> team2 = [<span class="hljs-keyword">new</span> Rating(), <span class="hljs-keyword">new</span> Rating()];
 <span class="hljs-comment">// Assumes the first team was the winner by default</span>
@@ -98,7 +98,7 @@
 <span class="hljs-comment">// &gt;&gt; Rating(mu=21.892, sigma=7.774),Rating(mu=21.892, sigma=7.774)</span>
 </code></pre>
 				<p>1 vs 1 example:</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Rating, quality_1vs1, rate_1vs1 } from <span class="hljs-string">'ts-trueskill'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Rating, quality_1vs1, rate_1vs1 } <span class="hljs-keyword">from</span> <span class="hljs-string">'ts-trueskill'</span>;
 <span class="hljs-keyword">const</span> r1 = <span class="hljs-keyword">new</span> Rating(<span class="hljs-number">40</span>, <span class="hljs-number">4</span>);
 <span class="hljs-keyword">const</span> r2 = <span class="hljs-keyword">new</span> Rating(<span class="hljs-number">10</span>, <span class="hljs-number">4</span>);
 <span class="hljs-keyword">const</span> q = quality_1vs1(r1, r2); <span class="hljs-comment">// quality will be low from large difference in scores</span>
